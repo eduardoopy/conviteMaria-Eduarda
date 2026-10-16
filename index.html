@@ -6,24 +6,24 @@
 <title>Maria Eduarda • 15 anos</title>
 <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Great+Vibes&family=Cormorant+Garamond:ital,wght@0,400;0,600;1,400&display=swap">
 <style>
-:root{--bg:#fbf5ea;--card:#fffaf0;--ink:#4a1a24;--wine:#7a1f33;--gold:#b8892e;--gold2:#e2bf6b;--soft:#f3e6cc;color-scheme:light;
+:root{--bg:#f5faff;--card:#fff;--ink:#17324d;--blue:#28669b;--blue-light:#a9cdea;--soft:#e3f0fb;color-scheme:light;
 box-sizing:border-box;padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px)}
-@media (prefers-color-scheme:dark){:root:not([data-theme="light"]){--bg:#2a0e15;--card:#3a141d;--ink:#f7ead2;--wine:#e9b3bd;--gold:#e2bf6b;--gold2:#f0d58d;--soft:#4a1b26;color-scheme:dark}}
+@media (prefers-color-scheme:dark){:root:not([data-theme="light"]){--bg:#10283e;--card:#193852;--ink:#f5faff;--blue:#a9cdea;--blue-light:#6e9fc7;--soft:#234966;color-scheme:dark}}
 *{box-sizing:border-box}html{scroll-padding-top:env(safe-area-inset-top,0px)}
 body{margin:0;background:var(--bg);color:var(--ink);font-family:'Cormorant Garamond',Georgia,serif;font-size:20px;line-height:1.55;text-align:center;overflow-x:hidden}
 .script{font-family:'Great Vibes','Brush Script MT',cursive;font-weight:400}
 /* Carta */
 #intro{position:fixed;inset:0;z-index:50;background:radial-gradient(circle at 50% 40%,var(--soft),var(--bg));display:flex;flex-direction:column;align-items:center;justify-content:center;gap:34px;transition:opacity 1s,visibility 1s}
 #intro.gone{opacity:0;visibility:hidden}
-#intro p{margin:0;font-style:italic;color:var(--wine);letter-spacing:.04em}
-.env{position:relative;width:min(320px,82vw);aspect-ratio:3/2;cursor:pointer;filter:drop-shadow(0 14px 18px rgba(74,26,36,.28))}
+#intro p{margin:0;font-style:italic;color:var(--blue);letter-spacing:.04em}
+.env{position:relative;width:min(320px,82vw);aspect-ratio:3/2;cursor:pointer;filter:drop-shadow(0 14px 18px rgba(23,50,77,.28))}
 .env .back,.env .front,.env .flap,.env .paper{position:absolute}
-.back{inset:0;background:#e8d3a6;border-radius:6px}
-.paper{left:7%;right:7%;top:6%;bottom:6%;background:var(--card);border-radius:4px;display:flex;align-items:center;justify-content:center;color:var(--wine);font-size:30px;transition:transform .9s .8s ease;z-index:2;border:1px solid var(--gold2)}
-.front{inset:0;z-index:3;background:linear-gradient(135deg,#f1e0b8 50%,transparent 50%) left/50% 100% no-repeat,linear-gradient(225deg,#ead7aa 50%,transparent 50%) right/50% 100% no-repeat;border-radius:6px}
-.front:after{content:"";position:absolute;inset:auto 0 0 0;height:55%;background:#f4e5c0;clip-path:polygon(0 100%,50% 0,100% 100%)}
-.flap{left:0;right:0;top:0;height:58%;z-index:4;background:#dcc48e;clip-path:polygon(0 0,100% 0,50% 100%);transform-origin:top;transition:transform .8s ease,z-index 0s .4s}
-.seal{position:absolute;left:50%;top:50%;width:62px;height:62px;margin:-31px;border-radius:50%;z-index:6;background:radial-gradient(circle at 35% 30%,var(--gold2),var(--gold));display:grid;place-items:center;color:#fff8e6;font-size:28px;box-shadow:0 3px 8px rgba(0,0,0,.35);transition:opacity .4s;animation:pulse 1.8s infinite}
+.back{inset:0;background:#c9def0;border-radius:6px}
+.paper{left:7%;right:7%;top:6%;bottom:6%;background:var(--card);border-radius:4px;display:flex;align-items:center;justify-content:center;color:var(--blue);font-size:30px;transition:transform .9s .8s ease;z-index:2;border:1px solid var(--blue-light)}
+.front{inset:0;z-index:3;background:linear-gradient(135deg,#e1eef9 50%,transparent 50%) left/50% 100% no-repeat,linear-gradient(225deg,#d4e6f5 50%,transparent 50%) right/50% 100% no-repeat;border-radius:6px}
+.front:after{content:"";position:absolute;inset:auto 0 0 0;height:55%;background:#edf6fc;clip-path:polygon(0 100%,50% 0,100% 100%)}
+.flap{left:0;right:0;top:0;height:58%;z-index:4;background:#b8d2e9;clip-path:polygon(0 0,100% 0,50% 100%);transform-origin:top;transition:transform .8s ease,z-index 0s .4s}
+.seal{position:absolute;left:50%;top:50%;width:62px;height:62px;margin:-31px;border-radius:50%;z-index:6;background:radial-gradient(circle at 35% 30%,#6d9ec7,#28669b);display:grid;place-items:center;color:#fff;font-size:28px;box-shadow:0 3px 8px rgba(0,0,0,.35);transition:opacity .4s;animation:pulse 1.8s infinite}
 @keyframes pulse{50%{transform:scale(1.09)}}
 .env.open .flap{transform:rotateX(180deg);z-index:1}
 .env.open .seal{opacity:0;animation:none}
@@ -33,25 +33,36 @@ main{max-width:640px;margin:0 auto;padding:0 22px 40px}
 .sec{padding:46px 0;opacity:0;transform:translateY(24px);transition:.9s}
 .show .sec{opacity:1;transform:none}
 .hero{padding-top:56px}
-.orn{font-size:42px;color:var(--gold);line-height:1}
+.orn{font-size:42px;color:var(--blue);line-height:1}
 .rays{width:130px;height:70px;margin:0 auto -6px;display:block}
-.small{letter-spacing:.28em;text-transform:uppercase;font-size:14px;color:var(--gold);margin:6px 0}
-h1{font-size:68px;margin:6px 0;color:var(--wine);line-height:1.05}
-h2{font-size:42px;margin:0 0 14px;color:var(--wine)}
-.divider{height:1px;background:linear-gradient(90deg,transparent,var(--gold),transparent);margin:0 auto;width:70%}
-.card{background:var(--card);border:1px solid var(--gold2);border-radius:14px;padding:26px 22px;box-shadow:0 8px 24px rgba(74,26,36,.1)}
+.small{letter-spacing:.28em;text-transform:uppercase;font-size:14px;color:var(--blue);margin:6px 0}
+h1{font-size:68px;margin:6px 0;color:var(--blue);line-height:1.05}
+h2{font-size:42px;margin:0 0 14px;color:var(--blue)}
+.divider{height:1px;background:linear-gradient(90deg,transparent,var(--blue),transparent);margin:0 auto;width:70%}
+.card{background:var(--card);border:1px solid var(--blue-light);border-radius:14px;padding:26px 22px;box-shadow:0 8px 24px rgba(23,50,77,.1)}
+.marian-card{position:relative;overflow:hidden;background:radial-gradient(circle at 10% 12%,rgba(169,205,234,.32),transparent 28%),var(--card);border:1px solid var(--blue-light);border-radius:18px;padding:26px 22px;box-shadow:0 8px 24px rgba(23,50,77,.1)}
+.marian-card:before,.marian-card:after{position:absolute;color:var(--blue-light);content:"✧";font-size:28px;animation:twinkle 2.4s ease-in-out infinite}
+.marian-card:before{top:12px;left:18px}
+.marian-card:after{right:18px;bottom:12px;animation-delay:1.2s}
+.crown-rays{display:block;width:150px;height:58px;margin:-10px auto -10px;overflow:visible;filter:drop-shadow(0 0 5px rgba(190,198,208,.42))}
+.crown-rays path,.crown-rays line{fill:none;stroke:#b8c2cf;stroke-width:1.6;stroke-linecap:round;stroke-linejoin:round}
+.crown-rays .crown-base{stroke-width:2}
+.crown-rays .glint{fill:#d6dce4;stroke:none;transform-box:fill-box;transform-origin:center;animation:twinkle 2.4s ease-in-out infinite}
+.crown-rays .glint:nth-of-type(2){animation-delay:.8s}
+@keyframes twinkle{50%{opacity:.35;transform:scale(.8)}}
+@media(prefers-reduced-motion:reduce){.marian-card:before,.marian-card:after,.crown-rays .glint{animation:none}}
 .quote{font-style:italic;font-size:22px}
 .date{display:flex;justify-content:center;align-items:center;gap:18px;margin:8px 0}
-.date b{font-size:64px;color:var(--wine);line-height:1}
-.date span{display:block;font-size:15px;letter-spacing:.2em;text-transform:uppercase;color:var(--gold);border-block:1px solid var(--gold2);padding:4px 0}
-.btn{display:inline-block;margin-top:14px;padding:13px 28px;border-radius:40px;text-decoration:none;font-weight:600;letter-spacing:.06em;font-size:18px;background:linear-gradient(135deg,var(--gold2),var(--gold));color:#3a1a05;box-shadow:0 5px 14px rgba(184,137,46,.4)}
-.btn.out{background:none;border:1.5px solid var(--gold);color:var(--wine);box-shadow:none}
+.date b{font-size:64px;color:var(--blue);line-height:1}
+.date span{display:block;font-size:15px;letter-spacing:.2em;text-transform:uppercase;color:var(--blue);border-block:1px solid var(--blue-light);padding:4px 0}
+.btn{display:inline-block;margin-top:14px;padding:13px 28px;border-radius:40px;text-decoration:none;font-weight:600;letter-spacing:.06em;font-size:18px;background:linear-gradient(135deg,var(--blue-light),var(--blue));color:#fff;box-shadow:0 5px 14px rgba(40,102,155,.3)}
+.btn.out{background:none;border:1.5px solid var(--blue);color:var(--blue);box-shadow:none}
 .gifts{list-style:none;padding:0;margin:14px 0 0;display:grid;grid-template-columns:1fr 1fr;gap:12px}
-.gifts li{background:var(--card);border:1px solid var(--gold2);border-radius:12px;padding:14px 8px;font-size:18px}
+.gifts li{background:var(--card);border:1px solid var(--blue-light);border-radius:12px;padding:14px 8px;font-size:18px}
 .gifts i{display:block;font-style:normal;font-size:28px}
-.last{border:1.5px dashed var(--gold);border-radius:14px;padding:22px;margin-top:10px}
-.last strong{color:var(--wine)}
-footer{font-size:15px;color:var(--gold);padding-top:10px}
+.last{border:1.5px dashed var(--blue);border-radius:14px;padding:22px;margin-top:10px}
+.last strong{color:var(--blue)}
+footer{font-size:15px;color:var(--blue);padding-top:10px}
 @media(max-width:420px){h1{font-size:54px}}
 </style>
 </head>
@@ -71,11 +82,11 @@ footer{font-size:15px;color:var(--gold);padding-top:10px}
 
 <main id="invite">
   <section class="sec hero">
-    <svg class="rays" viewBox="0 0 130 70" fill="none" stroke="#b8892e" stroke-width="2" stroke-linecap="round">
+    <svg class="rays" viewBox="0 0 130 70" fill="none" stroke="#28669b" stroke-width="2" stroke-linecap="round">
       <path d="M65 66V40M65 40 40 56M65 40l25 16M65 40 22 40M65 40l43 0M65 40 28 22M65 40l37-18M65 40 45 8M65 40l20-32M65 40V4"/>
-      <path d="M48 66c4-12 30-12 34 0z" fill="#e2bf6b"/>
+      <path d="M48 66c4-12 30-12 34 0z" fill="#a9cdea"/>
     </svg>
-    <div class="small">Nossa Senhora Aparecida</div>
+
     <div class="orn">✦</div>
     <h1 class="script">Maria Eduarda</h1>
     <div class="small">Meus 15 anos</div>
@@ -92,12 +103,27 @@ footer{font-size:15px;color:var(--gold);padding-top:10px}
     <p style="margin:0">Sábado • <span id="hora">às 20h</span></p>
   </section>
 
+  <section class="sec">
+    <div class="marian-card">
+      <svg class="crown-rays" viewBox="0 0 150 58" role="img" aria-label="Ornamento prateado em forma de coroa">
+        <line x1="75" y1="2" x2="75" y2="12"/>
+        <line x1="46" y1="8" x2="51" y2="17"/>
+        <line x1="104" y1="8" x2="99" y2="17"/>
+        <path d="M31 22 49 42 75 17 101 42 119 22 114 47H36Z"/>
+        <path class="crown-base" d="M36 51H114"/>
+        <circle class="glint" cx="31" cy="19" r="2.4"/>
+        <circle class="glint" cx="75" cy="14" r="2.8"/>
+        <circle class="glint" cx="119" cy="19" r="2.4"/>
+      </svg>
+    </div>
+  </section>
+
   <div class="divider"></div>
 
   <section class="sec">
     <h2 class="script">Onde vai ser</h2>
     <div class="card">
-      <div class="orn" style="font-size:30px">⛪</div>
+      <div class="orn" style="font-size:30px"></div>
       <p style="margin:6px 0"><strong id="local">Chácara Valdecy</strong><br><span id="end">Alameda Jovita Farias, 8 – Vila Romana, Aparecida de Goiânia – GO, 74962-550</span></p>
       <a class="btn out" id="mapa" target="_blank" rel="noopener">Ver no mapa</a>
     </div>
@@ -109,10 +135,10 @@ footer{font-size:15px;color:var(--gold);padding-top:10px}
     <h2 class="script">Sugestões de presentes</h2>
     <p style="margin:0">Sua presença é o maior presente! Mas, se quiser me presentear, algumas ideias:</p>
     <ul class="gifts">
-      <li><i>👗</i>Vestidos<br>tam. 38</li>
-      <li><i>👚</i>Blusas<br>tam. M</li>
-      <li><i>👟</i>Calçados<br>nº 39/40</li>
-      <li><i>💍</i>Joias<br>de prata</li>
+      <li><i></i>Roupas<br>tam. 38</li>
+      <li><i></i>Blusas<br>tam. M</li>
+      <li><i></i>Calçados<br>nº 39/40</li>
+      <li><i></i>Joias<br>de prata</li>
       <li style="grid-column:1/-1"><i>💠</i>Pix<br><strong id="pixnum">62 99228-0436</strong><br><button class="btn out" style="font-family:inherit;cursor:pointer" onclick="copiarPix(this)">Copiar chave Pix</button></li>
       
     </ul>
@@ -128,6 +154,7 @@ footer{font-size:15px;color:var(--gold);padding-top:10px}
 
   <section class="sec last">
     <p style="margin:0"><strong>Este convite é pessoal e intransferível.</strong><br>Por favor, não repasse este convite. 🤍</p>
+    <p style="margin:12px 0 0"><strong>Traje: esporte fino.</strong><br>Por favor, não utilizar roupas azuis.</p>
     <footer>Com amor, Maria Eduarda ✦ 15 anos<br>Nossa Senhora Aparecida, rogai por nós.</footer>
   </section>
 </main>
