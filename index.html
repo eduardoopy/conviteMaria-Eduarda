@@ -6,7 +6,7 @@
 <title>Maria Eduarda • 15 anos</title>
 <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Great+Vibes&family=Cormorant+Garamond:ital,wght@0,400;0,600;1,400&display=swap">
 <style>
-:root{--bg:#f5faff;--card:#fff;--ink:#17324d;--blue:#28669b;--blue-light:#a9cdea;--soft:#e3f0fb;color-scheme:light;
+:root{--bg:#f5faff;--card:#fff;--ink:#17324d;--blue:#28669b;--blue-light:#a9cdea;--gold:#c5a45f;--gold-soft:#eadfbe;--soft:#e3f0fb;color-scheme:light;
 box-sizing:border-box;padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px)}
 @media (prefers-color-scheme:dark){:root:not([data-theme="light"]){--bg:#10283e;--card:#193852;--ink:#f5faff;--blue:#a9cdea;--blue-light:#6e9fc7;--soft:#234966;color-scheme:dark}}
 *{box-sizing:border-box}html{scroll-padding-top:env(safe-area-inset-top,0px)}
@@ -23,7 +23,7 @@ body{margin:0;background:var(--bg);color:var(--ink);font-family:'Cormorant Garam
 .front{inset:0;z-index:3;background:linear-gradient(135deg,#e1eef9 50%,transparent 50%) left/50% 100% no-repeat,linear-gradient(225deg,#d4e6f5 50%,transparent 50%) right/50% 100% no-repeat;border-radius:6px}
 .front:after{content:"";position:absolute;inset:auto 0 0 0;height:55%;background:#edf6fc;clip-path:polygon(0 100%,50% 0,100% 100%)}
 .flap{left:0;right:0;top:0;height:58%;z-index:4;background:#b8d2e9;clip-path:polygon(0 0,100% 0,50% 100%);transform-origin:top;transition:transform .8s ease,z-index 0s .4s}
-.seal{position:absolute;left:50%;top:50%;width:62px;height:62px;margin:-31px;border-radius:50%;z-index:6;background:radial-gradient(circle at 35% 30%,#6d9ec7,#28669b);display:grid;place-items:center;color:#fff;font-size:28px;box-shadow:0 3px 8px rgba(0,0,0,.35);transition:opacity .4s;animation:pulse 1.8s infinite}
+.seal{position:absolute;left:50%;top:50%;width:62px;height:62px;margin:-31px;border-radius:50%;z-index:6;background:radial-gradient(circle at 35% 30%,#e4d3a2,#b99851);display:grid;place-items:center;color:#fff;font-size:28px;box-shadow:0 3px 8px rgba(0,0,0,.25);transition:opacity .4s;animation:pulse 1.8s infinite}
 @keyframes pulse{50%{transform:scale(1.09)}}
 .env.open .flap{transform:rotateX(180deg);z-index:1}
 .env.open .seal{opacity:0;animation:none}
@@ -33,15 +33,15 @@ main{max-width:640px;margin:0 auto;padding:0 22px 40px}
 .sec{padding:46px 0;opacity:0;transform:translateY(24px);transition:.9s}
 .show .sec{opacity:1;transform:none}
 .hero{padding-top:56px}
-.orn{font-size:42px;color:var(--blue);line-height:1}
+.orn{font-size:42px;color:var(--gold);line-height:1}
 .rays{width:130px;height:70px;margin:0 auto -6px;display:block}
 .small{letter-spacing:.28em;text-transform:uppercase;font-size:14px;color:var(--blue);margin:6px 0}
 h1{font-size:68px;margin:6px 0;color:var(--blue);line-height:1.05}
 h2{font-size:42px;margin:0 0 14px;color:var(--blue)}
-.divider{height:1px;background:linear-gradient(90deg,transparent,var(--blue),transparent);margin:0 auto;width:70%}
-.card{background:var(--card);border:1px solid var(--blue-light);border-radius:14px;padding:26px 22px;box-shadow:0 8px 24px rgba(23,50,77,.1)}
-.marian-card{position:relative;overflow:hidden;background:radial-gradient(circle at 10% 12%,rgba(169,205,234,.32),transparent 28%),var(--card);border:1px solid var(--blue-light);border-radius:18px;padding:26px 22px;box-shadow:0 8px 24px rgba(23,50,77,.1)}
-.marian-card:before,.marian-card:after{position:absolute;color:var(--blue-light);content:"✧";font-size:28px;animation:twinkle 2.4s ease-in-out infinite}
+.divider{height:1px;background:linear-gradient(90deg,transparent,var(--gold-soft),var(--blue),var(--gold-soft),transparent);margin:0 auto;width:70%}
+.card{background:var(--card);border:1px solid var(--blue-light);border-radius:14px;padding:26px 22px;box-shadow:0 8px 24px rgba(23,50,77,.1),inset 0 0 0 1px rgba(234,223,190,.35)}
+.marian-card{position:relative;overflow:hidden;background:radial-gradient(circle at 50% 52%,rgba(221,196,139,.15),transparent 48%),radial-gradient(circle at 10% 12%,rgba(169,205,234,.32),transparent 28%),var(--card);border:1px solid var(--gold-soft);border-radius:18px;padding:26px 22px;box-shadow:0 8px 24px rgba(23,50,77,.1)}
+.marian-card:before,.marian-card:after{position:absolute;color:var(--gold);content:"✧";font-size:28px;animation:twinkle 2.4s ease-in-out infinite}
 .marian-card:before{top:12px;left:18px}
 .marian-card:after{right:18px;bottom:12px;animation-delay:1.2s}
 .crown-rays{display:block;width:150px;height:58px;margin:-10px auto -10px;overflow:visible;filter:drop-shadow(0 0 5px rgba(190,198,208,.42))}
@@ -49,16 +49,17 @@ h2{font-size:42px;margin:0 0 14px;color:var(--blue)}
 .crown-rays .crown-base{stroke-width:2}
 .crown-rays .glint{fill:#d6dce4;stroke:none;transform-box:fill-box;transform-origin:center;animation:twinkle 2.4s ease-in-out infinite}
 .crown-rays .glint:nth-of-type(2){animation-delay:.8s}
+.mary-figure{display:block;width:116px;height:126px;margin:0 auto;filter:drop-shadow(0 4px 5px rgba(23,50,77,.12))}
 @keyframes twinkle{50%{opacity:.35;transform:scale(.8)}}
 @media(prefers-reduced-motion:reduce){.marian-card:before,.marian-card:after,.crown-rays .glint{animation:none}}
 .quote{font-style:italic;font-size:22px}
 .date{display:flex;justify-content:center;align-items:center;gap:18px;margin:8px 0}
 .date b{font-size:64px;color:var(--blue);line-height:1}
-.date span{display:block;font-size:15px;letter-spacing:.2em;text-transform:uppercase;color:var(--blue);border-block:1px solid var(--blue-light);padding:4px 0}
+.date span{display:block;font-size:15px;letter-spacing:.2em;text-transform:uppercase;color:var(--blue);border-block:1px solid var(--gold-soft);padding:4px 0}
 .btn{display:inline-block;margin-top:14px;padding:13px 28px;border-radius:40px;text-decoration:none;font-weight:600;letter-spacing:.06em;font-size:18px;background:linear-gradient(135deg,var(--blue-light),var(--blue));color:#fff;box-shadow:0 5px 14px rgba(40,102,155,.3)}
 .btn.out{background:none;border:1.5px solid var(--blue);color:var(--blue);box-shadow:none}
 .gifts{list-style:none;padding:0;margin:14px 0 0;display:grid;grid-template-columns:1fr 1fr;gap:12px}
-.gifts li{background:var(--card);border:1px solid var(--blue-light);border-radius:12px;padding:14px 8px;font-size:18px}
+.gifts li{background:var(--card);border:1px solid var(--blue-light);border-radius:12px;padding:14px 8px;font-size:18px;box-shadow:inset 0 0 0 1px rgba(234,223,190,.3)}
 .gifts i{display:block;font-style:normal;font-size:28px}
 .last{border:1.5px dashed var(--blue);border-radius:14px;padding:22px;margin-top:10px}
 .last strong{color:var(--blue)}
@@ -82,9 +83,9 @@ footer{font-size:15px;color:var(--blue);padding-top:10px}
 
 <main id="invite">
   <section class="sec hero">
-    <svg class="rays" viewBox="0 0 130 70" fill="none" stroke="#28669b" stroke-width="2" stroke-linecap="round">
+    <svg class="rays" viewBox="0 0 130 70" fill="none" stroke="#c5a45f" stroke-width="2" stroke-linecap="round">
       <path d="M65 66V40M65 40 40 56M65 40l25 16M65 40 22 40M65 40l43 0M65 40 28 22M65 40l37-18M65 40 45 8M65 40l20-32M65 40V4"/>
-      <path d="M48 66c4-12 30-12 34 0z" fill="#a9cdea"/>
+      <path d="M48 66c4-12 30-12 34 0z" fill="#eadfbe"/>
     </svg>
 
     <div class="orn">✦</div>
@@ -114,6 +115,19 @@ footer{font-size:15px;color:var(--blue);padding-top:10px}
         <circle class="glint" cx="31" cy="19" r="2.4"/>
         <circle class="glint" cx="75" cy="14" r="2.8"/>
         <circle class="glint" cx="119" cy="19" r="2.4"/>
+      </svg>
+      <svg class="mary-figure" viewBox="0 0 120 130" role="img" aria-label="Ilustração delicada de Nossa Senhora Aparecida">
+        <path d="M60 10C38 10 24 26 21 49l-8 66c30 14 64 14 94 0l-8-66C96 26 82 10 60 10Z" fill="#4d82ad"/>
+        <path d="M60 17c-17 0-27 12-27 29 0 11 5 20 11 27l-9 36c16 8 34 8 50 0l-9-36c6-7 11-16 11-27 0-17-10-29-27-29Z" fill="#f8fbff"/>
+        <ellipse cx="60" cy="46" rx="14" ry="18" fill="#f3d5c3"/>
+        <path d="M51 47q3-3 6 0m6 0q3-3 6 0" fill="none" stroke="#604d4c" stroke-width="1.5" stroke-linecap="round"/>
+        <path d="M57 56q3 3 6 0" fill="none" stroke="#bd7f7a" stroke-width="1.5" stroke-linecap="round"/>
+        <path d="M51 77q9 8 18 0l8 31q-17 9-34 0Z" fill="#fff"/>
+        <path d="M55 82q-1 10 5 17 6-7 5-17" fill="none" stroke="#e6bd78" stroke-width="2" stroke-linecap="round"/>
+        <path d="M60 98v12m-5-9 5 6 5-6" fill="none" stroke="#f3d5c3" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"/>
+        <path d="M22 108q38 17 76 0" fill="none" stroke="#c6a66e" stroke-width="2" stroke-linecap="round"/>
+        <circle cx="28" cy="82" r="2" fill="#fff" opacity=".8"/>
+        <circle cx="92" cy="82" r="2" fill="#fff" opacity=".8"/>
       </svg>
     </div>
   </section>
@@ -154,7 +168,7 @@ footer{font-size:15px;color:var(--blue);padding-top:10px}
 
   <section class="sec last">
     <p style="margin:0"><strong>Este convite é pessoal e intransferível.</strong><br>Por favor, não repasse este convite. 🤍</p>
-    <p style="margin:12px 0 0"><strong>Traje: esporte fino.</strong><br>Por favor, não utilizar roupas azuis.</p>
+    <p style="margin:12px 0 0"><strong>Traje: esporte fino.</strong><br>Por favor, não utilizar roupas na paleta azul.</p>
     <footer>Com amor, Maria Eduarda ✦ 15 anos<br>Nossa Senhora Aparecida, rogai por nós.</footer>
   </section>
 </main>
